@@ -4,6 +4,7 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
 NUM_WORKERS = os.cpu_count()
+#NUM_WORKERS = 0 # you can make this 0 if you get any error on mac silicon
 
 def create_dataloaders(
     train_dir: str,

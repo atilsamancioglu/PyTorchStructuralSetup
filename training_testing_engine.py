@@ -1,4 +1,5 @@
 import torch
+from torch import nn
 
 def train_step(model: torch.nn.Module,
                dataloader: torch.utils.data.DataLoader,
