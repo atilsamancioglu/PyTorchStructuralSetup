@@ -22,6 +22,8 @@ train_dataloader, test_dataloader, class_names = setup_data.create_dataloaders(
     transform=data_transform,
     batch_size=BATCH_SIZE
 )
+# you can obviously omit the previous codes and just get the class names from main
+
 loaded_model = model_creation.DesertClassifier(
         input_shape=3,
         hidden_units=HIDDEN_UNITS,
